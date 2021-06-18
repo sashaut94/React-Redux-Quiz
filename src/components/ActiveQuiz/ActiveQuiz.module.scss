@@ -1,0 +1,28 @@
+.ActiveQuiz {
+
+}
+
+.title {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.wrapper {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  width: 85%;
+}
+
+.counter {
+  width: 15%;
+  text-align: right;
+}

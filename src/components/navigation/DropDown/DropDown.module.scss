@@ -1,0 +1,42 @@
+.DropDown {
+  position: fixed;
+  width: 80%;
+  max-width: 300px;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-300px);
+  transition: .3s;
+  display: flex;
+  z-index: 2;
+  padding: 20px 10px;
+}
+
+.open {
+  transform: translateX(0px);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.link {
+  text-decoration: none;
+  color: #363d54;
+  font-size: 28px;
+  background-color: #fff;
+  padding: 0 20px 10px 20px;
+  transition: .3s;
+  display: block;
+
+  &:hover, &:active {
+    opacity: .7;
+  }
+}
