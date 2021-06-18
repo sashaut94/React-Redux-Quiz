@@ -43,8 +43,8 @@ class QuizCreator extends Component {
     })
   }
 
-  createTest = () => {
-    this.props.addQuiz(this.state.titleControl.value)
+  createTest = async () => {
+    await this.props.addQuiz(this.state.titleControl.value)
     this.setState({
       formControls: createFormControls(),
       titleControl: createControl({
@@ -54,6 +54,7 @@ class QuizCreator extends Component {
       isFormValid: false,
       rightAnswerId: 1,
     })
+    this.props.history.push('/')
   }
 
   onTitleChangeHandler = (e) => {
